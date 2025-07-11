@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter" , sans-serif;
+}
+
+body {
+  background: #fff1e5;
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  background: white;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.card img {
+  width: 300px;
+}
+
+.main h1 {
+  font-size: 56px;
+  text-align: center;
+}
+
+.main p {
+  font-size: 16px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.card-form {
+  flex: 1;
+  width: 100%;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.range-value {
+  font-weight: bold;
+  float: right;
+}
+.password-output {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.password-output input {
+  width: 100%;
+  padding: 10px 75px 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.password-output .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+#pass_strength {
+  height: 30px;
+  align-content: center;
+  padding-left:  12px;
+  padding-right:  12px;
+  border-radius: 7px;
+  /* background-color: #9ae437; */
+  color: #000;
+  font-size: 14px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+#refreshBtn {
+  right: 40px;
+}
+
+#copyBtn {
+  right: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.checkbox_main {
+  display: flex;
+  gap: 20px;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: normal;
+}
+
+.generate-btn {
+  /* margin-top: 20px; */
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.generate-btn:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .card-form {
+    width: 100%;
+  }
+  .main h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .main p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .lock_icon {
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+  }
+#pass_strength {
+  height: 25px;
+  font-size: 12px;
+}
+
+}
