@@ -59,6 +59,7 @@ body {
   text-align: left;
   margin-bottom: 15px;
   overflow: hidden;
+  /* color: #000; */
 }
 
 .form-group label {
@@ -92,7 +93,7 @@ body {
   transform: translateY(-50%);
   cursor: pointer;
   font-size: 24px;
-  color: #333;
+  /* color: #333; */
 }
 #pass_strength {
   height: 30px;
@@ -117,6 +118,11 @@ body {
 
 input[type="range"] {
   width: 100%;
+  accent-color: #007bff; 
+}
+
+input[type="checkbox"] {
+  accent-color: #007bff; 
 }
 
 .checkbox-group {
